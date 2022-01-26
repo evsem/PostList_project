@@ -1,0 +1,12 @@
+.postList_wrapper {
+}
+
+.postList_title {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  letter-spacing: 2px;
+  color: grey;
+  text-align: center;
+  margin: 16px;
+}

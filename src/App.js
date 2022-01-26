@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import PostItem from './Components/PostItem/PostItem'
+import PostList from './Components/PostList/PostList'
 
 function App() {
   let [posts, setPosts] = useState([
@@ -12,10 +13,7 @@ function App() {
   ])
   return (
     <div className="App">
-      {posts.map((post) => (
-        //Мапим массив posts, выводим каждый элемент массива posts в виде post. Затем мы присваимваем компоненту PostItem пропс(props_postItem), в который прокидываем элемент post. Ключ присваиваем по id(он должен быть всегда уникальным).
-        <PostItem props_postItem={post} key={posts.id} />
-      ))}
+      <PostList posts={posts} />
     </div>
   )
 }
