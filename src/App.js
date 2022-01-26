@@ -1,14 +1,13 @@
 import React from 'react'
 import './App.css'
 import PostItem from './Components/PostItem/PostItem'
-import PostList from './Components/PostList/PostList'
 
 function App() {
   return (
     <div className="App">
-      <PostItem />
-
-      <PostList />
+      <PostItem
+        props_postItem={{ id: 1, title: 'JS', body: 'Programming language' }}
+      />
     </div>
   )
 }
